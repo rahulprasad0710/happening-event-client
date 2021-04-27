@@ -1,0 +1,30 @@
+.nav {
+    top: 0;
+    left: 0;
+    background-color: #0b4b88;
+    display: flex;
+    color: #ffda29;
+    min-height: 10vh;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brandName {
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.logo {
+    height: 1em;
+}
