@@ -8,6 +8,7 @@
     width: 100%;
     align-items: center;
     position: fixed;
+    z-index: 20;
 }
 
 .container {
@@ -27,4 +28,8 @@
 
 .logo {
     height: 1em;
+}
+.btnevent {
+    display: block;
+    float: right;
 }
