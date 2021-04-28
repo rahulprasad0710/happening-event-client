@@ -1,3 +1,11 @@
+/* :root{
+    $green: #a2ccb6
+$light-peach: #ffecd9
+$peach: #ee786e
+$sand: #fceeb5
+$white: #fff
+} */
+
 html,
 body {
     padding: 0;
@@ -22,5 +30,74 @@ a {
 }
 .layoutPage {
     min-height: 87vh;
-    margin-top: 10vh;
+    margin-top: 15vh;
+}
+
+/* .text-muted {
+    color: rgba(88, 90, 94, 0.473);
+} */
+
+.navbar_search_btn_icon {
+    color: rgb(43, 40, 58);
+    font-size: 16px;
+    font-weight: 800;
+    transition: all 0.2s ease-in;
+}
+.navbar_search_btn_icon:hover {
+    color: rgb(47, 163, 72);
+}
+
+.btn_back {
+    -webkit-appearance: none;
+    background: -webkit-gradient(
+        to right,
+        #a2ccb6 0%,
+        #fceeb5 50%,
+        #ee786e 100%
+    );
+    background: linear-gradient(
+        to right,
+        #a2ccb6 0%,
+        #fceeb5 50%,
+        #ee786e 100%
+    );
+    background-size: 500%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 3rem;
+    letter-spacing: 0.05em;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    min-width: 10rem;
+    transition: all ease 0.4s;
+}
+
+.btn_back:hover {
+    animation-name: gradient;
+    -webkit-animation-name: gradient;
+    animation-duration: 2s;
+    -webkit-animation-duration: s;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100%;
+    }
 }

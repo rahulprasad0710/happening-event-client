@@ -17,7 +17,9 @@ function Home({ events }) {
         <Layout>
             <main className={styles.main}>
                 {!events && <h3>Loading...</h3>}
-                {events && events.map((evnt) => <EventItem evnt={evnt} />)}
+                <div className={styles.allevents}>
+                    {events && events.map((evnt) => <EventItem evnt={evnt} />)}
+                </div>
             </main>
         </Layout>
     );

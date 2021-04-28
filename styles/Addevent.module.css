@@ -1,0 +1,34 @@
+.formbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gird_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 1rem 1rem;
+}
+
+.gird_container label {
+    display: block;
+}
+.gird_container input {
+    width: 300px;
+    padding: 0.5rem 2rem;
+    border-radius: 0.2rem;
+    border: 1px solid #fceeb5;
+}
+.formbox textarea {
+    border: 1px solid #fceeb5;
+}
+
+@media screen and (max-width: 480px) {
+    .gird_container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: auto;
+    }
+}
